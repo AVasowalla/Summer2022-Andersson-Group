@@ -51,7 +51,7 @@ Week 2 simulation update
 
 PID Controller Simulation
 <p align="center">
-<iframe src="https://player.vimeo.com/video/719214696?h=267b7038bd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
+<iframe src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
 </p>
 
 ### Tasks for Week 3 (6/20/22 - 6/24/22)
