@@ -2,6 +2,16 @@
 
 This website is a blog to track our progress through the summer working with Yancheng on the Data Harvestig in a Wireless Sensor Network project.
 
+## Week 5 (7/4/22 - 7/8/22)
+
+### Tasks Completed
+
+1.  
+
+### Tasks for Week 6 (7/11/22 - 7/15/22)
+
+1.  
+
 ## Week 4 (6/27/22 - 7/1/22)
 
 ### Tasks Completed
