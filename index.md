@@ -12,7 +12,7 @@ This website is a blog to track our progress through the summer working with Yan
 ### Tasks for Week 6 (7/11/22 - 7/15/22)
 
 1.  Be able to fly drone indoors without using gps signal through ROS and motion camera data
-2.  Learn to use the motion capture equipment
+2.  Learn how to use the motion capture equipment
 
 ## Week 4 (6/27/22 - 7/1/22)
 
