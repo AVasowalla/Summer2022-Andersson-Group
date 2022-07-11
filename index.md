@@ -6,11 +6,13 @@ This website is a blog to track our progress through the summer working with Yan
 
 ### Tasks Completed
 
-1.  
+1.  Communication between autopilot controller (Pihawk 4 mini) with companion computer (Raspbery Pi and Odroid).
+
 
 ### Tasks for Week 6 (7/11/22 - 7/15/22)
 
-1.  
+1.  Be able to fly drone indoors without using gps signal through ROS and motion camera data
+2.  Learn to use the motion capture equipment
 
 ## Week 4 (6/27/22 - 7/1/22)
 
@@ -19,6 +21,8 @@ This website is a blog to track our progress through the summer working with Yan
 1.  Using 2 odroid computers and 1 raspberry pi, we have wireless communication (wifi)
     *  Can send data, calculate transmission rates, plot those rates, calculate the volume of data transmitted, and plot that value in a decreasing bar plot (given an initial data volume)
 2.  All scripts run on startup, with one computer being the master which only handles the integration of the transmission rate as well as the plotting
+3.  Quadcopter was built using components found in the lab.
+4.  The electronics were built to make the sensor clients portable
 
 ### Tasks for Week 5 (7/4/22 - 7/8/22)
 
@@ -26,6 +30,7 @@ This website is a blog to track our progress through the summer working with Yan
 2.  Test transmission rates to see if distance affects the rate and if so, what does the rate curve look like
 3.  Begin testing quadrotor flight in motion capture arena
 4.  Learn how to use motion capture arena
+5.  Learn how to program drone
 
 ## Week 3 (6/20/22 - 2/24/22)
 
