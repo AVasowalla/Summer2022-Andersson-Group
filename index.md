@@ -87,7 +87,8 @@ PID Controller Simulation
     *  more than just even spacing
 5.  Set up user input for sensor positions on world generation
 
-## Week 1 (6/6/22 - 6/10/22)
+<details><summary>## Week 1 (6/6/22 - 6/10/22)</summary>
+<p>
 
 ### Tasks Completed
 
@@ -114,3 +115,6 @@ Basic time based simulation video
     *  move to specified position, dwell for specified time, then repeat
 3.  Create multiple, more accurate world models to run test simulations on
 4.  Continue to familiarize with ROS, Python, and Gazebo
+
+</p>
+</details>
