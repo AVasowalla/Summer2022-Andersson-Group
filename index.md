@@ -6,23 +6,23 @@ This website is a blog to track our progress through the summer working with Yan
 <p>
 
 ### Tasks Completed
+'''
+   1.  Communication between autopilot controller (Pihawk 4 mini) with companion computer (Raspbery Pi and Odroid).
+   2.  Connected rapsberry pi and odroid with bluetooth network access point.
+       *  The computers connected to each other and could do so on startup. Both devices can see the roscore and run scripts individually, however, nodes are not seen by the devices that are not running the node.
+          a.  i.e if drone_server.py is running on the odroid, the raspberry pi can only see the drone_server node as a dead node regardless of if it is actually alive or not
+      *  I am looking into a package on github called ros_bluetooth which seems like a better solution and I will work through that this coming week.
+   3.  Briefly looked into how the motion capture arena works and will continue to look into that this comming week.
 
-1.  Communication between autopilot controller (Pihawk 4 mini) with companion computer (Raspbery Pi and Odroid).
-2.  Connected rapsberry pi and odroid with bluetooth network access point.
-    *  The computers connected to each other and could do so on startup. Both devices can see the roscore and run scripts individually, however, nodes are not seen by the devices that are not running the node.
-       a.  i.e if drone_server.py is running on the odroid, the raspberry pi can only see the drone_server node as a dead node regardless of if it is actually alive or not
-    *  I am looking into a package on github called ros_bluetooth which seems like a better solution and I will work through that this coming week.
-3.  Briefly looked into how the motion capture arena works and will continue to look into that this comming week.
 
+   ### Tasks for Week 6 (7/11/22 - 7/15/22)
 
-### Tasks for Week 6 (7/11/22 - 7/15/22)
-
-1.  Be able to fly drone indoors without using gps signal through ROS and motion camera data
-2.  Learn how to use the motion capture equipment
-3.  Implement ros_bluetooth package
-    *  If completed and working, test to see if distance affects transmission rates, and if so at what distance scale
-4.  If above is completed succesfully, start running single agent, multiple sensor experiment.
-
+   1.  Be able to fly drone indoors without using gps signal through ROS and motion camera data
+   2.  Learn how to use the motion capture equipment
+   3.  Implement ros_bluetooth package
+       *  If completed and working, test to see if distance affects transmission rates, and if so at what distance scale
+   4.  If above is completed succesfully, start running single agent, multiple sensor experiment.
+'''
 </p>
 </details>
 
