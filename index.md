@@ -12,7 +12,7 @@ This website is a blog to track our progress through the summer working with Yan
     *  Data is transmitted from the pi to the odroid and then the odroid is able to calculate the transmission rate and plot it.
 2.  Looked into multiproccessing/multithreading to try to connect multiple devices to one socket/port
     *  Discovered that it is not possible to connect multiple devices to the same socket/port
-       a.  Possible solution to create a new socket in each process to allow for multiple connections.
+       *  Possible solution to create a new socket in each process to allow for multiple connections.
 3.  Some basic testing of how transmission rate is affected by distance
     *  There is a visible change in transmission rate when the devices are moved to different distances
     *  Based on the crude testing the motion capture arena MIGHT be too small for the transmission rate to change based on the position of the quad
@@ -33,7 +33,7 @@ This website is a blog to track our progress through the summer working with Yan
 1.  Communication between autopilot controller (Pihawk 4 mini) with companion computer (Raspbery Pi and Odroid).
 2.  Connected rapsberry pi and odroid with bluetooth network access point.
     *  The computers connected to each other and could do so on startup. Both devices can see the roscore and run scripts individually, however, nodes are not seen by the devices that are not running the node.
-       a.  i.e if drone_server.py is running on the odroid, the raspberry pi can only see the drone_server node as a dead node regardless of if it is actually alive or not
+       *  i.e if drone_server.py is running on the odroid, the raspberry pi can only see the drone_server node as a dead node regardless of if it is actually alive or not
     *  I am looking into a package on github called ros_bluetooth which seems like a better solution and I will work through that this coming week.
 3.  Briefly looked into how the motion capture arena works and will continue to look into that this comming week.
 
