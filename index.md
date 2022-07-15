@@ -2,7 +2,8 @@
 
 This website is a blog to track our progress through the summer working with Yancheng on the Data Harvestig in a Wireless Sensor Network project.
 
-## Week 5 (7/4/22 - 7/8/22)
+<details><summary>Week 5 (7/4/22 - 7/8/22)</summary>
+<p>
 
 ### Tasks Completed
 
@@ -22,7 +23,11 @@ This website is a blog to track our progress through the summer working with Yan
     *  If completed and working, test to see if distance affects transmission rates, and if so at what distance scale
 4.  If above is completed succesfully, start running single agent, multiple sensor experiment.
 
-## Week 4 (6/27/22 - 7/1/22)
+</p>
+</details>
+
+<details><summary>Week 4 (6/27/22 - 7/1/22)</summary>
+<p>
 
 ### Tasks Completed
 
@@ -40,7 +45,11 @@ This website is a blog to track our progress through the summer working with Yan
 4.  Learn how to use motion capture arena
 5.  Learn how to program drone
 
-## Week 3 (6/20/22 - 2/24/22)
+</p>
+</details>
+
+<details><summary>Week 3 (6/20/22 - 2/24/22)</summary>
+<p>
 
 ### Tasks Completed
 
@@ -56,7 +65,11 @@ This website is a blog to track our progress through the summer working with Yan
 3.  Use bluetooth instead of wifi
 4.  Start blog to replace slides
 
-## Week 2 (6/13/22 - 6/17/22)
+</p>
+</details>
+
+<details><summary>Week 2 (6/13/22 - 6/17/22)</summary>
+<p>
 
 ### Tasks Completed
 
@@ -87,7 +100,10 @@ PID Controller Simulation
     *  more than just even spacing
 5.  Set up user input for sensor positions on world generation
 
-<details><summary>## Week 1 (6/6/22 - 6/10/22)</summary>
+</p>
+</details>
+
+<details><summary>Week 1 (6/6/22 - 6/10/22)</summary>
 <p>
 
 ### Tasks Completed
