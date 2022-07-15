@@ -2,32 +2,27 @@
 
 This website is a blog to track our progress through the summer working with Yancheng on the Data Harvestig in a Wireless Sensor Network project.
 
-<details><summary>Week 5 (7/4/22 - 7/8/22)</summary>
-<p>
+## Week 5 (7/4/22 - 7/8/22)
 
 ### Tasks Completed
-'''
-   1.  Communication between autopilot controller (Pihawk 4 mini) with companion computer (Raspbery Pi and Odroid).
-   2.  Connected rapsberry pi and odroid with bluetooth network access point.
-       *  The computers connected to each other and could do so on startup. Both devices can see the roscore and run scripts individually, however, nodes are not seen by the devices that are not running the node.
-          a.  i.e if drone_server.py is running on the odroid, the raspberry pi can only see the drone_server node as a dead node regardless of if it is actually alive or not
-      *  I am looking into a package on github called ros_bluetooth which seems like a better solution and I will work through that this coming week.
-   3.  Briefly looked into how the motion capture arena works and will continue to look into that this comming week.
+
+1.  Communication between autopilot controller (Pihawk 4 mini) with companion computer (Raspbery Pi and Odroid).
+2.  Connected rapsberry pi and odroid with bluetooth network access point.
+    *  The computers connected to each other and could do so on startup. Both devices can see the roscore and run scripts individually, however, nodes are not seen by the devices that are not running the node.
+       a.  i.e if drone_server.py is running on the odroid, the raspberry pi can only see the drone_server node as a dead node regardless of if it is actually alive or not
+    *  I am looking into a package on github called ros_bluetooth which seems like a better solution and I will work through that this coming week.
+3.  Briefly looked into how the motion capture arena works and will continue to look into that this comming week.
 
 
-   ### Tasks for Week 6 (7/11/22 - 7/15/22)
+### Tasks for Week 6 (7/11/22 - 7/15/22)
 
-   1.  Be able to fly drone indoors without using gps signal through ROS and motion camera data
-   2.  Learn how to use the motion capture equipment
-   3.  Implement ros_bluetooth package
-       *  If completed and working, test to see if distance affects transmission rates, and if so at what distance scale
-   4.  If above is completed succesfully, start running single agent, multiple sensor experiment.
-'''
-</p>
-</details>
+1.  Be able to fly drone indoors without using gps signal through ROS and motion camera data
+2.  Learn how to use the motion capture equipment
+3.  Implement ros_bluetooth package
+    *  If completed and working, test to see if distance affects transmission rates, and if so at what distance scale
+4.  If above is completed succesfully, start running single agent, multiple sensor experiment.
 
-<details><summary>Week 4 (6/27/22 - 7/1/22)</summary>
-<p>
+## Week 4 (6/27/22 - 7/1/22)
 
 ### Tasks Completed
 
@@ -45,11 +40,7 @@ This website is a blog to track our progress through the summer working with Yan
 4.  Learn how to use motion capture arena
 5.  Learn how to program drone
 
-</p>
-</details>
-
-<details><summary>Week 3 (6/20/22 - 2/24/22)</summary>
-<p>
+## Week 3 (6/20/22 - 2/24/22)
 
 ### Tasks Completed
 
@@ -65,11 +56,7 @@ This website is a blog to track our progress through the summer working with Yan
 3.  Use bluetooth instead of wifi
 4.  Start blog to replace slides
 
-</p>
-</details>
-
-<details><summary>Week 2 (6/13/22 - 6/17/22)</summary>
-<p>
+## Week 2 (6/13/22 - 6/17/22)
 
 ### Tasks Completed
 
@@ -100,11 +87,7 @@ PID Controller Simulation
     *  more than just even spacing
 5.  Set up user input for sensor positions on world generation
 
-</p>
-</details>
-
-<details><summary>Week 1 (6/6/22 - 6/10/22)</summary>
-<p>
+## Week 1 (6/6/22 - 6/10/22)
 
 ### Tasks Completed
 
@@ -131,6 +114,3 @@ Basic time based simulation video
     *  move to specified position, dwell for specified time, then repeat
 3.  Create multiple, more accurate world models to run test simulations on
 4.  Continue to familiarize with ROS, Python, and Gazebo
-
-</p>
-</details>
