@@ -24,6 +24,8 @@ This website is a blog to track our progress through the summer working with Yan
     *  If completed and working, test to see if distance affects transmission rates, and if so at what distance scale
 4.  If above is completed succesfully, start running single agent, multiple sensor experiment.
 
+---
+
 ## Week 4 (6/27/22 - 7/1/22)
 
 ### Tasks Completed
@@ -42,6 +44,8 @@ This website is a blog to track our progress through the summer working with Yan
 4.  Learn how to use motion capture arena
 5.  Learn how to program drone
 
+---
+
 ## Week 3 (6/20/22 - 2/24/22)
 
 ### Tasks Completed
@@ -57,6 +61,8 @@ This website is a blog to track our progress through the summer working with Yan
 2.  Be able to start the scripts automatically when the computer boots
 3.  Use bluetooth instead of wifi
 4.  Start blog to replace slides
+
+---
 
 ## Week 2 (6/13/22 - 6/17/22)
 
@@ -88,6 +94,8 @@ PID Controller Simulation
 4.  Implement custom sensor positioning through launch file
     *  more than just even spacing
 5.  Set up user input for sensor positions on world generation
+
+---
 
 ## Week 1 (6/6/22 - 6/10/22)
 
