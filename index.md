@@ -4,9 +4,31 @@ This website is a blog to track our progress through the summer working with Yan
 
 ---
 
+## Week 6 (7/11/22 - 7/15/22)
+
+##### Tasks Completed
+
+1.  Bluetooth communication established between one raspberry pi and one odroid.
+    *  Data is transmitted from the pi to the odroid and then the odroid is able to calculate the transmission rate and plot it.
+2.  Looked into multiproccessing/multithreading to try to connect multiple devices to one socket/port
+    *  Discovered that it is not possible to connect multiple devices to the same socket/port
+       a.  Possible solution to create a new socket in each process to allow for multiple connections.
+3.  Some basic testing of how transmission rate is affected by distance
+    *  There is a visible change in transmission rate when the devices are moved to different distances
+    *  Based on the crude testing the motion capture arena MIGHT be too small for the transmission rate to change based on the position of the quad
+    *  The testing was done using small packets of data (< 1024 bytes) so maybe with larger packets we will see a greater change in rates
+
+##### Tasks for Week 7 (7/18/22 - 7/22/22)
+
+1.  Set up multiple sensors to connect to one odroid
+2.  Set up automatic connect, disconnect, and transmission
+3.  Do more robust testing of how transmission rates are affected by packet size and distance between raspberry pi and odroid
+
+---
+
 ## Week 5 (7/4/22 - 7/8/22)
 
-### Tasks Completed
+##### Tasks Completed
 
 1.  Communication between autopilot controller (Pihawk 4 mini) with companion computer (Raspbery Pi and Odroid).
 2.  Connected rapsberry pi and odroid with bluetooth network access point.
@@ -16,7 +38,7 @@ This website is a blog to track our progress through the summer working with Yan
 3.  Briefly looked into how the motion capture arena works and will continue to look into that this comming week.
 
 
-### Tasks for Week 6 (7/11/22 - 7/15/22)
+##### Tasks for Week 6 (7/11/22 - 7/15/22)
 
 1.  Be able to fly drone indoors without using gps signal through ROS and motion camera data
 2.  Learn how to use the motion capture equipment
@@ -28,7 +50,7 @@ This website is a blog to track our progress through the summer working with Yan
 
 ## Week 4 (6/27/22 - 7/1/22)
 
-### Tasks Completed
+##### Tasks Completed
 
 1.  Using 2 odroid computers and 1 raspberry pi, we have wireless communication (wifi)
     *  Can send data, calculate transmission rates, plot those rates, calculate the volume of data transmitted, and plot that value in a decreasing bar plot (given an initial data volume)
@@ -36,7 +58,7 @@ This website is a blog to track our progress through the summer working with Yan
 3.  Quadcopter was built using components found in the lab.
 4.  The electronics were built to make the sensor clients portable
 
-### Tasks for Week 5 (7/4/22 - 7/8/22)
+##### Tasks for Week 5 (7/4/22 - 7/8/22)
 
 1.  Set up bluetooth communication between computers
 2.  Test transmission rates to see if distance affects the rate and if so, what does the rate curve look like
@@ -48,14 +70,14 @@ This website is a blog to track our progress through the summer working with Yan
 
 ## Week 3 (6/20/22 - 2/24/22)
 
-### Tasks Completed
+##### Tasks Completed
 
 1.  Simulator is fully functional with editable launch files to input sensor positions
 2.  Connection between two odroid controllers via wifi
 3.  Messages can be sent between wirelessly connected odroids
 4.  Transfer rates can be calculated based on package size and time recieved
 
-### Tasks for Week 4 (6/27/22 - 7/1/22)
+##### Tasks for Week 4 (6/27/22 - 7/1/22)
 
 1.  Test our setup with more than two odroid computers
 2.  Be able to start the scripts automatically when the computer boots
@@ -66,7 +88,7 @@ This website is a blog to track our progress through the summer working with Yan
 
 ## Week 2 (6/13/22 - 6/17/22)
 
-### Tasks Completed
+##### Tasks Completed
 
 1.  Data harvesting implemented into Python and Gazebo
 2.  Quadrotor control based on position implemented
@@ -85,7 +107,7 @@ PID Controller Simulation
 <iframe src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
 </p>
 
-### Tasks for Week 3 (6/20/22 - 6/24/22)
+##### Tasks for Week 3 (6/20/22 - 6/24/22)
 
 1.  Start understanding how to move from simulator to real world
 2.  Set up dual boot Linux and Windows
@@ -99,7 +121,7 @@ PID Controller Simulation
 
 ## Week 1 (6/6/22 - 6/10/22)
 
-### Tasks Completed
+##### Tasks Completed
 
 1.  ROS Tutorials
     *  I now have a basic understanding of how to use ROS
@@ -117,7 +139,7 @@ Basic time based simulation video
 <iframe src="https://player.vimeo.com/video/719214696?h=267b7038bd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
 </p>
 
-### Tasks for Week 2 (6/13/22 - 6/17/22)
+##### Tasks for Week 2 (6/13/22 - 6/17/22)
 
 1.  Implement data harvesting in Python
 2.  Create psition based quadrotor control
