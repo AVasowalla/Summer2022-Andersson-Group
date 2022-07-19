@@ -4,6 +4,24 @@ This website is a blog to track our progress through the summer working with Yan
 
 ---
 
+## Week 6 (7/18/22 - 7/22/22)
+
+##### Tasks Completed
+
+1.  Bluetooth communication established between two raspberry pi's and one odroid.
+    *  Packets transmitted to odroid and rates caluculated and graphed, there is a visible change in rate with small packets when one device is connected vs two devices, there is also a noticable change in rate after about 10 feet of separation, this can potentially be amplified manually to simulate real world conditions
+2.  
+
+##### Tasks for Week 8 (7/25/22 - 7/29/22)
+
+********
+1.  Set up multiple sensors to connect to one odroid
+2.  Set up automatic connect, disconnect, and transmission
+3.  Do more robust testing of how transmission rates are affected by packet size and distance between raspberry pi and odroid
+********
+
+---
+
 ## Week 6 (7/11/22 - 7/15/22)
 
 ##### Tasks Completed
