@@ -4,7 +4,7 @@ This website is a blog to track our progress through the summer working with Yan
 
 ---
 
-## Week 6 (7/18/22 - 7/22/22)
+## Week 7 (7/18/22 - 7/22/22)
 
 ##### Tasks Completed
 
