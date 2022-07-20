@@ -11,13 +11,12 @@ This website is a blog to track our progress through the summer working with Yan
 1.  Bluetooth communication established between two raspberry pi's and one odroid.
     *  Packets transmitted to odroid and rates caluculated and graphed, there is a visible change in rate with small packets when one device is connected vs two devices, there is also a noticable change in rate after about 10 feet of separation, this can potentially be amplified manually to simulate real world conditions
 2.  Noise filter implemented into plotting script, it is now much easier to see the changes in transmission rates.
+3.  Implemented disconnection handling so the sensors will constantly search for the drone, and connect when able even with after dropped connection
 
 ##### Tasks for Week 8 (7/25/22 - 7/29/22)
 
 ********
-1.  Set up multiple sensors to connect to one odroid
-2.  Set up automatic connect, disconnect, and transmission
-3.  Do more robust testing of how transmission rates are affected by packet size and distance between raspberry pi and odroid
+1.  Do more robust testing of how transmission rates are affected by packet size and distance between raspberry pi and odroid
 ********
 
 ---
