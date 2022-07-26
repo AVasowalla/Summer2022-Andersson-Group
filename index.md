@@ -17,9 +17,9 @@ This website is a blog to track our progress through the summer working with Yan
 
 ##### Tasks for Week 8 (7/25/22 - 7/29/22)
 
-********
-1.  Do more robust testing of how transmission rates are affected by packet size and distance between raspberry pi and odroid
-********
+1.  Clean code
+2.  Make plotting tools more robust and able to handle disconnects without thinking data was transmitted
+3.  Learn how to use motion capture projectors to display transmission rates and data values
 
 ---
 
