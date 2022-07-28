@@ -4,6 +4,26 @@ This website is a blog to track our progress through the summer working with Yan
 
 ---
 
+## Week 8 (7/25/22 - 7/29/22)
+
+##### Tasks Completed
+
+1.  Plotting tools able to handle disconnections and not think the device is transmitting data
+2.  Transmission rate upper and lower bounds experimentally determined
+    *  In Mbps: 0.1-0.155 upper limit range for 3 devices, and
+    *  In Mbps: 0.18-0.22 upper limit range for 2 devices, and 0.13 lower limit for 2 devices
+    *  In Mbps: 0.29 upper limit for 1 device, and 0.12 lower limit for 1 device
+       *  The lower limit was not at dropped connection, but rather measured at the distance at which I could not go farther in the hallway outside the lab
+3.  Connection from two raspberry pi's and one odroid to another odroid established (though this becomes unstable)
+4.  Documented code and created a .txt document with instructions for setting up more or less sensors.
+5.  Learned how to use motion capture projectors (have not actually used them yet, but it essentially entails connecting to the drone odroid via remote desktop and moving windows around.
+
+##### Tasks for Week 9 (8/1/22 - 8/5/22)
+
+1.  
+
+---
+
 ## Week 7 (7/18/22 - 7/22/22)
 
 ##### Tasks Completed
