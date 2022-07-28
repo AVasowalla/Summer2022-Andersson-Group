@@ -9,7 +9,7 @@ This has been tested on **ROS Kinetic** and **Ubuntu MATE 16.04** and works with
 
 **Author: Armaan Vasowalla, armaan@bu.edu**
 
-**Affiliation: BU Robotic Lab, Andersson Group**
+**Affiliation: BU Robotics Lab, Andersson Group**
 
 ## Dependencies
 
