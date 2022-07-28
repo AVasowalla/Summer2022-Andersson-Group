@@ -7,14 +7,13 @@ import time
 import random
 
 #define global variables
-drone_addr = "08:BE:AC:2E:16:4A"
-sens_name = 2
+drone_addr = "08:BE:AC:2E:16:4A" #change this to the MAC address of the drone
+sens_name = 1 #change this to a unique integer for each sensor
 vol = 1000.0
 data = {"name" : sens_name, "data volume" : vol, "time" : 0}
 random.seed()
 
 while 1:
-
 	avail_ports = [x['port'] for x in bluetooth.find_service(name="Drone", address=drone_addr)]
 	avail_ports.sort()
 	print(avail_ports)
@@ -23,6 +22,7 @@ while 1:
 	for port in avail_ports:
 		ran_time = random.uniform(0.0, 2.0)
 		time.sleep(ran_time)
+
 		if port in [x['port'] for x in bluetooth.find_service(name="Drone", address=drone_addr)]:
 			try:
 				print(port)
@@ -30,6 +30,7 @@ while 1:
 				client_socket.connect((drone_addr, port))
 				print("connected to " + str(port))
 				break
+
 			except Exception:
 				client_socket.close()
 
@@ -40,6 +41,7 @@ while 1:
 			client_socket.send(sendable)
 			vol -= 1
 			data["data volume"] = vol
+
 		except Exception:
 			break
 
