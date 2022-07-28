@@ -17,6 +17,7 @@ This website is a blog to track our progress through the summer working with Yan
 3.  Connection from two raspberry pi's and one odroid to another odroid established (though this becomes unstable)
 4.  Documented code and created a .txt document with instructions for setting up more or less sensors.
 5.  Learned how to use motion capture projectors (have not actually used them yet, but it essentially entails connecting to the drone odroid via remote desktop and moving windows around.
+6.  Uploaded package to github and added documentation
 
 ##### Tasks for Week 9 (8/1/22 - 8/5/22)
 
