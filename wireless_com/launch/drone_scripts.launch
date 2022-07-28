@@ -1,0 +1,6 @@
+<launch>
+	<node name="bluetooth_drone" pkg="wireless_com" type="bluetooth_drone.py" output="screen"></node>
+	<node name="integrate_rates" pkg="wireless_com" type="integrate_rates.py" output="screen" required="true"></node>
+	<node name="plot_rates" pkg="wireless_com" type="plot_rates.py" output="screen"></node>
+	<node name="plot_data" pkg="wireless_com" type="plot_data.py" output="screen"></node>
+</launch>
