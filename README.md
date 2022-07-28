@@ -26,7 +26,7 @@ Next, in order to start the script on start up, in `~/.bashrc` add the following
 
 `python3 ~/catkin_ws/src/wireless_com/scripts/bluetooth_sensor.py`
 
-On the drone, in `bluetooth_drone.py` change the _num_sensors_ variable on `line 108` to be equal to the number of sensors you are using. In `plot_data.py` change the _init_data_ global dictionary to contain the initial data values of each drone with their corresponding integer names as key values. In `plot_rates.py` change the _num_sens_ global variable to be the number of sensors you are using.
+On the drone, in `bluetooth_drone.py` change the _num_sensors_ variable on `line 94` to be equal to the number of sensors you are using. In `plot_data.py` change the _init_data_ global dictionary to contain the initial data values of each drone with their corresponding integer names as key values. In `plot_rates.py` change the _num_sens_ global variable to be the number of sensors you are using.
 
 Next, in order to start the necessary scripts on start up, in `~/.bashrc` add the following line:
 
