@@ -8,6 +8,7 @@ This packages gives the functionality of bluetooth communication from multiple d
 This has been tested on **ROS Kinetic** and **Ubuntu MATE 16.04** and works with both **Raspberry Pi 3**'s and **Odroid XU4**'s
 
 **Author: Armaan Vasowalla, armaan@bu.edu**
+
 **Affiliation: BU Robotic Lab, Andersson Group**
 
 ## Dependencies
