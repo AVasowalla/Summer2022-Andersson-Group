@@ -7,6 +7,7 @@ import multiprocessing
 import rospy
 import sys
 from wireless_com.msg import transfer_rate
+from std_msgs.msg import UInt8
 
 
 #define global variables
@@ -14,13 +15,17 @@ prev_time = {}
 prev_data = {}
 current_time = 0
 message = transfer_rate()
+finished_sensors = []
 
 #function reads data from bluetooth socket, and calculates the transmission rate and stores this in a ros message
 def read_data(client_socket, addr, event):
 	global prev_time
 	global current_time
 	global prev_data
+	global finished_sensors
 
+	listener()
+	
 	try:
 		data = client_socket.recv(1024)
 
@@ -28,6 +33,9 @@ def read_data(client_socket, addr, event):
 		try:
 			readable = json.loads(data.decode('utf-8'))
 			name = readable['name']
+
+			if name in finished_sensors:
+				event.set()
 
 			#if the current sensor has not been read from yet, set initial values of prev_time and prev_data
 			if name not in prev_time.keys():
@@ -89,6 +97,15 @@ def run_process(port):
 			#checks to see that data is still being recieved, otherwise stops reading
 			if event.is_set():
 				break
+
+def callback(data):
+	global finished_sensors
+
+	if data not in finished_sensors:
+		finished_sensors.append(int(data.data))
+
+def listener():
+	rospy.Subscriber("/sensor_states", UInt8, callback, queue_size=10)
 
 if __name__ == '__main__':
 	num_sensors = 10 #change this calue to the number of sensors you are using

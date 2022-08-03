@@ -5,6 +5,7 @@ import rospy
 from wireless_com.msg import sent_data
 from matplotlib import animation, cm
 from matplotlib import pyplot as plt
+from std_msgs.msg import UInt8
 
 #define global variables
 fig = plt.figure()
@@ -12,7 +13,7 @@ ax = fig.add_subplot(1, 1, 1)
 
 sensor_data = {}
 color_list = []
-init_data = {1 : 4500, 2 : 4750, 3: 5000} #change this to the data values of each sensor with their respective unique interger values as keys (in Mb)
+init_data = {1 : 45, 2 : 30, 3: 50} #change this to the data values of each sensor with their respective unique interger values as keys (in Mb)
 curr_data = init_data.copy()
 num_sens = len(init_data.keys())
 i = 0
@@ -34,7 +35,6 @@ def callback(data):
 
 #standard ros subscriber
 def listener():
-	rospy.init_node("get_sensor_data")
 	rospy.Subscriber("/sensor_data", sent_data, callback, queue_size=1)
 
 #animated plotting function
@@ -49,7 +49,7 @@ def animate(i):
 		for key in sensor_data.keys():
 			if init_data[key] - sensor_data[key] <= 0:
 				curr_data[key] = 0
-
+				talker(key)
 			else:
 				curr_data[key] = init_data[key] - sensor_data[key]
 
@@ -64,7 +64,14 @@ def animate(i):
 
 		plt.bar(sensor_data.keys(), [curr_data[x] for x in sensor_data.keys()], color=colors)
 
+def talker(sensor):
+	pub = rospy.Publisher("sensor_states", UInt8, queue_size=10)
+	rate = rospy.Rate(1000)
+	pub.publish(sensor)
+	rate.sleep
+
 if __name__ == '__main__':
+	rospy.init_node("get_sensor_data")
 	listener()
 	ani = animation.FuncAnimation(fig, animate, interval=100)
 	plt.show()
