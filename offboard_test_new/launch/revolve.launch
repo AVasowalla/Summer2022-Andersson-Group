@@ -1,0 +1,10 @@
+<launch>
+  <?ignore
+    Does the following:
+    1) Start a node commanding the quad to rotate slowly about the vertical axis
+  ?>
+
+  <node pkg="offboard_test" name="Revolve_Node" type="revolve.py"/>
+  <node pkg="offboard_test" name="VelocityController_Node" type="velocityController.py"/>
+
+</launch>

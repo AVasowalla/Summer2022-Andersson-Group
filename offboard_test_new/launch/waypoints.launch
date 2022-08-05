@@ -1,0 +1,19 @@
+<launch>
+  <?ignore
+    Does the following:
+    1) Start a node commanding the quad to follow a list of waypoints in waypoints.txt
+  ?>
+  
+  <node pkg="offboard_test" name="GoToStartLeader_Node" type="goToStart.py" args="0.0 -8.22 0.5 0.0 0.0 0.0 1.0"/>
+  <?ignore
+  <node pkg="offboard_test" name="GoToStartLeader_Node" type="goToStart.py" args="0.5 -8.22 0.3 0.0 0.0 0.0 1.0"/>
+  <node pkg="offboard_test" name="GoToStartLeader_Node" type="goToStart.py" args="1.0 -6.22 0.4 0.0 0.0 0.0 1.0"/>
+  <node pkg="offboard_test" name="GoToStartLeader_Node" type="goToStart.py" args="2.0 -2.22 0.4 0.0 0.0 0.0 1.0"/>
+  <node pkg="offboard_test" name="GoToStartLeader_Node" type="goToStart.py" args="0.0 -2.22 0.3 0.0 0.0 0.0 1.0"/>
+  ?>
+
+  
+  <node pkg="offboard_test" name="Waypoints_Node" type="demo_read_waypoint.py"/>
+  <node pkg="offboard_test" name="VelocityController_Node_Waypoints" type="velocityController.py"/>
+
+</launch>

@@ -1,0 +1,13 @@
+<launch>
+  <?ignore
+    Does the following:    
+    1) Connect to PX4 through mavros with subgroup label "hostname"
+    2) Start VRPN to stream mocap data to this particular quad
+  ?>
+
+  <arg name="hostname" default="$(env HOSTNAME)" />
+  <include file="$(find offboard_test)/launch/multi_px4.launch"/>
+ 
+  <remap from="/vrpn_client_node/$(arg hostname)/pose" to="/$(arg hostname)/mavros/vision_pose/pose"/>
+  <include file="$(find offboard_test)/launch/vrpn.launch"/> 
+</launch>

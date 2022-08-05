@@ -1,0 +1,10 @@
+<launch>
+  <?ignore
+    Does the following:
+    1) Connect to PX4 via mavros then publish topics under the subgroup labeled "hostname"
+    # This is useful for use with multi-agents where the mocap stream is at central computer
+  ?>
+
+  <arg name="hostname" default="$(env HOSTNAME)" />
+  <include file="$(find offboard_test)/launch/px4.launch" ns="$(arg hostname)"/>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="rosbag" type="play" name="rosbag" required="true" args="/home/odroid/bags/ros.bag"/>
+  <node pkg="offboard_test" name="image_extract" type="extractImages.py"/>
+</launch>

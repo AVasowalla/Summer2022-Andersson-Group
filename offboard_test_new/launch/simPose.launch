@@ -1,0 +1,9 @@
+<launch>
+  <?ignore
+    Does the following:
+    1) Start a node to generate artificial pose messages to mimic mavros
+  ?>
+
+  <node pkg="offboard_test" name="simPose_Node" type="simPose.py"/>
+
+</launch>

@@ -1,0 +1,14 @@
+<launch>
+  <?ignore
+    Does the following:
+    1) Connect to PX4 through mavros with subgroup label "hostname"
+    2) Start VRPN to stream mocap data to this particular quad
+    3) Start face tracking for selfie mode
+  ?>
+
+  <include file="$(find offboard_test)/launch/vrpn_px4.launch"/>
+
+  <node pkg="offboard_test" name="VidStream_Node" type="vid_stream.py"/>
+  <node pkg="offboard_test" name="FaceDetection_Node" type="face_detection.py"/>
+
+</launch>
