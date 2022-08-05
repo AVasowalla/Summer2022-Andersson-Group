@@ -4,6 +4,25 @@ This website is a blog to track our progress through the summer working with Yan
 
 ---
 
+## Week 9 (8/1/22 - 8/5/22)
+
+##### Tasks Completed
+
+1.  Tried using one odroid on the drone and noticed that the bluetooth communication is not behaving as it was previously
+2.  Set up a second odroid to be attached to the drone to handle the communication
+3.  Flight based on global waypoints has been achieved
+4.  Only crashed once and it was non fatal, yay!
+5.  Set up ssh and puTTy to be able to view the plots from a remote computer
+6.  
+
+##### Tasks for Week 10 (8/8/22 - 8/12/22)
+
+1.  Refine code more
+2.  Implement algorithm generated waypoints
+3.  Run experiments (hopefully)
+
+---
+
 ## Week 8 (7/25/22 - 7/29/22)
 
 ##### Tasks Completed
@@ -21,7 +40,9 @@ This website is a blog to track our progress through the summer working with Yan
 
 ##### Tasks for Week 9 (8/1/22 - 8/5/22)
 
-1.  
+1.  Fly drone with waypoint commands
+2.  Set up either the odroid on the drone with the bluetooth package, or add a new odroid for dedicated bluetooth processor so that bandwidth is not limited
+3.  Refine drone flight and bluetooth communication
 
 ---
 
