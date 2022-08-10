@@ -169,12 +169,12 @@ This website is a blog to track our progress through the summer working with Yan
 
 Week 2 simulation update
 <p align="center">
-<iframe src="https://drive.google.com/file/d/1n7TwTOtXF3PeY6vdR2iWvegDq2ZftWn9/preview" width = "640" height = "400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
+<iframe src="https://drive.google.com/file/d/1n7TwTOtXF3PeY6vdR2iWvegDq2ZftWn9/preview" width = "1024" height = "576" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
 </p>
 
 PID Controller Simulation
 <p align="center">
-<iframe src="https://drive.google.com/file/d/1APxcuD7ZKacA67X9VSZInk0sdV47aMgh/preview" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
+<iframe src="https://drive.google.com/file/d/1APxcuD7ZKacA67X9VSZInk0sdV47aMgh/preview" width = "1024" height = "576" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
 </p>
 
 ##### Tasks for Week 3 (6/20/22 - 6/24/22)
@@ -206,7 +206,7 @@ PID Controller Simulation
 
 Basic time based simulation video
 <p align="center">
-<iframe src="https://drive.google.com/file/d/1JPPZK9b9AfXmUlKRPYHdfCMbHBhZAYQj/preview" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
+<iframe src="https://drive.google.com/file/d/1JPPZK9b9AfXmUlKRPYHdfCMbHBhZAYQj/preview" width = "1024" height = "576" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
 </p>
 
 ##### Tasks for Week 2 (6/13/22 - 6/17/22)
