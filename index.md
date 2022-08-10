@@ -4,6 +4,16 @@ This website is a blog to track our progress through the summer working with Yan
 
 ---
 
+## Week 10 (8/8/22 - 8/12/22)
+
+##### Tasks Completed
+
+1.  Encountered bluetooth problem where the transmission rate was constantly decaying and not reacting to changes in distance.
+    *  Determined that this may have been caused by a small packet size thus not using the full bandwidth.
+2.  Increased packet size and ran experiments to determine the transmission rate curve for Yancheng's algorithm
+
+---
+
 ## Week 9 (8/1/22 - 8/5/22)
 
 ##### Tasks Completed
@@ -13,7 +23,6 @@ This website is a blog to track our progress through the summer working with Yan
 3.  Flight based on global waypoints has been achieved
 4.  Only crashed once and it was non fatal, yay!
 5.  Set up ssh and puTTy to be able to view the plots from a remote computer
-6.  
 
 ##### Tasks for Week 10 (8/8/22 - 8/12/22)
 
@@ -165,7 +174,7 @@ Week 2 simulation update
 
 PID Controller Simulation
 <p align="center">
-<iframe src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
+<iframe src="https://drive.google.com/file/d/1APxcuD7ZKacA67X9VSZInk0sdV47aMgh/preview" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
 </p>
 
 ##### Tasks for Week 3 (6/20/22 - 6/24/22)
