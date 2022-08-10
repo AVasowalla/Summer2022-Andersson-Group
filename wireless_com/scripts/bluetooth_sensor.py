@@ -7,10 +7,11 @@ import time
 import random
 
 #define global variables
-drone_addr = "08:BE:AC:2E:16:4A" #change this to the MAC address of the drone
+drone_addr = "08:BE:AC:2E:16:64" #change this to the MAC address of the drone
 sens_name = 1 #change this to a unique integer for each sensor
 vol = 1000.0
-data = {"name" : sens_name, "data volume" : vol, "time" : 0}
+large_data = 'this is a test message to determine the size of a package that hides the decay rate and brings the transmission rate up to the maximum expected value of three Mbps'
+data = {"name" : sens_name, "data volume" : vol, "data0" : large_data, "data1" : large_data, "data2" : large_data, "time" : 0}
 random.seed()
 
 while 1:
@@ -31,7 +32,7 @@ while 1:
 				print("connected to " + str(port))
 				break
 
-			except Exception:
+			except Exception as e:
 				client_socket.close()
 
 	#send data to reciever
@@ -41,8 +42,9 @@ while 1:
 			client_socket.send(sendable)
 			vol -= 1
 			data["data volume"] = vol
+			print(vol)
 
-		except Exception:
+		except Exception as e:
 			break
 
 #close client socket

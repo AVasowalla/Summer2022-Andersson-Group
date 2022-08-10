@@ -61,8 +61,7 @@ def listener():
 #animated plotting function, also filters noise from the transmission rates
 def animate(i):
 	ax.clear()
-
-	n = 1000
+	n = 500
 	b = [1.0 / n] * n
 	a = 1
 
@@ -74,10 +73,13 @@ def animate(i):
 				filtered = np.append(filtered, filtered[-1])
 
 			try:
-				ax.plot(times[key], filtered, color=color_list[key-1])
-				reset = True
+				filenameRate = "/home/odroid/Documents/tranmission_rate" + str(key) + ".csv"
+				filenameTime = "/home/odroid/Documents/time" + str(key) + ".csv"
+				np.savetxt(filenameRate, filtered, delimiter=',')
+				np.savetxt(filenameTime, times[key], delimiter=',')
+				ax.plot(times[key][0:len(filtered)], filtered, color=color_list[key-1])
 
-			except Exception:
+			except Exception as e:
 				pass
 
 		plt.title("Data Transmission Rates vs Time")

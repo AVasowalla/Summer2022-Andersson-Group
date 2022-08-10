@@ -53,7 +53,8 @@ def read_data(client_socket, addr, event):
 				prev_time[name] = current_time
 				prev_data[name] = readable['data volume']
 
-		except Exception:
+		except Exception as e:
+			print(e)
 			print("finished collection and disconnected")
 			event.set()
 

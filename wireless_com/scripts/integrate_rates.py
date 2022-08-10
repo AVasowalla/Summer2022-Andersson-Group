@@ -31,7 +31,7 @@ def callback(data):
 		rates[data.name] = [data.rate]
 		times[data.name] = [data.time]
 
-	n = 1000
+	n = 500
 	b = [1.0 / n] * n
 	a = 1
 

@@ -49,7 +49,7 @@ def animate(i):
 		for key in sensor_data.keys():
 			if init_data[key] - sensor_data[key] <= 0:
 				curr_data[key] = 0
-				talker(key)
+				#talker(key)
 			else:
 				curr_data[key] = init_data[key] - sensor_data[key]
 
