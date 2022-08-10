@@ -169,7 +169,7 @@ This website is a blog to track our progress through the summer working with Yan
 
 Week 2 simulation update
 <p align="center">
-<iframe src="https://drive.google.com/file/d/1n7TwTOtXF3PeY6vdR2iWvegDq2ZftWn9/preview" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
+<iframe src="https://drive.google.com/file/d/1n7TwTOtXF3PeY6vdR2iWvegDq2ZftWn9/preview" width = "640" height = "400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hector Quadrotor time based pathing"></iframe>
 </p>
 
 PID Controller Simulation
