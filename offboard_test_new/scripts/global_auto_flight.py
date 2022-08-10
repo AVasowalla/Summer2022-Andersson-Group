@@ -148,7 +148,7 @@ class Drone:
 
 	def interval(self, current_pose, goal_pose):
 		magnitude = abs(norm(goal_pose - current_pose))
-		interval = 0.05*magnitude + 0.001
+		interval = 0.03*magnitude
 		return interval
 
 	def print_error(self, goal_pos, current_pos, goal_ori, current_ori):
@@ -172,11 +172,11 @@ class Drone:
 		ys2 = sensor2[1]
 		zs2 = height
 
-		self.waypoints = np.array([[drone_initial[0],drone_initial[1],height,3],[xs1,ys1,zs1,3],[xs2,ys2,zs2,3], [drone_initial[0],drone_initial[1],height,3]])
+		self.waypoints = np.array([[drone_initial[0],drone_initial[1],height,2],[xs1,ys1,zs1,8],[xs2,ys2,zs2,8], [drone_initial[0],drone_initial[1],height,2]])
 		print(self.waypoints)
 
 
-	def goTo(self, wp, mode='global', tol=0.0005):
+	def goTo(self, wp, mode='global', tol=0.05):
 		# wp = self.transform(wp)
 		if mode=='global':
 			goal = wp
@@ -187,13 +187,14 @@ class Drone:
 		initial_pos = self.pose
 		initial_ori = self.euler_orientation()
 		t0 = time.time()
-		travel_time = norm(goal-self.pose) + 5
+		travel_time = norm(goal-self.pose) + 10
 		while norm(goal - self.pose) > tol:
 			n = (goal - self.sp) / norm(goal - self.sp)
 			self.sp += self.interval(self.pose, goal) * n
 			self.publish_setpoint(self.sp, 0)
 			t = time.time()
 			if t - t0 > travel_time:
+				print("timeout")
 				break
 			self.rate.sleep()
 
